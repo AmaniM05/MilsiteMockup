@@ -116,6 +116,13 @@ body {
   align-items: center;
 }
 
+.content-container {
+  border: 2px solid #0b5fdb;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+
 .content-container .container {
   border: 2px solid #0b5fdb;
   border-radius: 12px;
