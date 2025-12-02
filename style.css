@@ -1,11 +1,67 @@
 body {
-gap: 60px;
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+background: #ffffff;
+color: #222;
+}
+
+
+/* Banner */
+.banner {
+background: #0b5fdb;
+padding: 60px 20px;
+text-align: center;
+color: white;
 width: 100%;
 box-sizing: border-box;
 }
 
 
+.banner .logo-icon {
+font-size: 48px;
+margin-bottom: 10px;
+}
+
+
+.banner h1 {
+font-size: 42px;
+margin: 0;
+font-weight: 600;
+}
+
+
+.banner p {
+font-size: 18px;
+margin-top: 10px;
+opacity: 0.9;
+}
+
+
+/* Main Layout */
+.content-wrapper {
+width: 100%;
+max-width: 1400px;
+margin: 40px auto;
+padding: 0 30px;
+box-sizing: border-box;
+}
+
+
+.layout {
+display: flex;
+gap: 60px;
+width: 100%;
+box-sizing: border-box;
+justify-content: space-between;
+}
+
+
 /* Articles */
+.articles {
+flex: 1 1 50%;
+}
+
+
 .articles h2 {
 font-size: 26px;
 margin-bottom: 25px;
@@ -21,61 +77,4 @@ border-bottom: 1px solid #ededed;
 
 .article h3 {
 font-size: 20px;
-margin-bottom: 5px;
-}
-
-
-.article p {
-color: #444;
-margin-bottom: 8px;
-}
-
-
-.meta {
-font-size: 14px;
-color: #777;
-}
-
-
-/* Cards */
-.cards {
-display: flex;
-flex-direction: column;
-gap: 20px;
-width: 350px;
-}
-
-
-.card {
-display: flex;
-align-items: flex-start;
-gap: 15px;
-padding: 20px;
-border: 1px solid #eee;
-border-radius: 12px;
-background: white;
-box-shadow: 0 1px 4px rgba(0,0,0,0.06);
-}
-
-
-.card h4 {
-font-size: 18px;
-margin: 0;
-}
-
-
-.card p {
-margin: 5px 0 0;
-color: #555;
-}
-
-
-/* Responsive */
-@media (max-width: 900px) {
-.layout {
-flex-direction: column;
-}
-.cards {
-width: 100%;
-}
 }
